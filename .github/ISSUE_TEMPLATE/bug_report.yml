@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible problem without private session data.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach raw monitor output, tokens or private conversations. Use synthetic or redacted examples."
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: macOS version/architecture, Swift/Python versions, Hermes version/commit and Glance commit.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behavior and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence
+      description: Relevant error category or synthetic reproduction, not raw transcripts.
